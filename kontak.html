@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio pribadi Vins — web developer pemula dan pembuat aplikasi sederhana.">
+  <title>Kontak | Portofolio Vins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<header class="site-header">
+  <nav class="nav container" aria-label="Navigasi utama">
+    <a class="brand" href="index.html"><span class="brand-mark">V</span> vins<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a class="" href="index.html">Beranda</a>
+      <a class="" href="tentang.html">Tentang Saya</a>
+      <a class="" href="project.html">Project</a>
+      <a class="active" href="kontak.html">Kontak</a>
+    </div>
+    <a class="nav-cta" href="kontak.html">Hubungi Saya <span>↗</span></a>
+  </nav>
+</header>
+<main>
+
+<section class="page-hero"><div class="container reveal"><p class="breadcrumb">Beranda / Kontak</p><p class="section-kicker">MARI TERHUBUNG</p><h1>Punya ide? <span>Ayo bicarakan.</span></h1><p>Kirimkan pertanyaan, penawaran proyek, atau ajakan kolaborasi. Saya akan senang mendengar ide kamu.</p></div></section>
+<section class="page-content"><div class="container contact-page-grid">
+<div class="contact-intro reveal"><p class="section-kicker">KONTAK SAYA</p><h2>Mulai dari satu <span>pesan.</span></h2><p>Ceritakan apa yang sedang kamu rencanakan. Isi formulir di samping agar detail kebutuhanmu lebih mudah dipahami.</p><div class="contact-detail"><div class="contact-detail-icon">✉</div><div><small>EMAIL</small><p>emailkamu@example.com</p></div></div><div class="contact-detail"><div class="contact-detail-icon">⌁</div><div><small>STATUS</small><p><span class="status-dot"></span> Terbuka untuk peluang</p></div></div><div class="contact-side-card"><strong>Catatan</strong>Setelah menekan tombol kirim, aplikasi email pada perangkat akan terbuka dengan pesan yang sudah disiapkan.</div></div>
+<form class="contact-form reveal" id="contactForm"><div class="form-heading"><h3>Formulir kontak</h3><p>Lengkapi informasi berikut untuk memulai percakapan.</p></div>
+<div class="form-row"><label for="name">Nama lengkap</label><input id="name" name="name" type="text" placeholder="Nama kamu" required minlength="2"></div>
+<div class="form-row"><label for="email">Alamat email</label><input id="email" name="email" type="email" placeholder="nama@email.com" required></div>
+<div class="form-row"><label for="service">Layanan yang dibutuhkan</label><div class="select-wrap"><select id="service" name="service" required><option value="" disabled selected>Pilih layanan</option><option>Pembuatan website</option><option>Aplikasi sederhana</option><option>Perbaikan website</option><option>Kolaborasi proyek</option><option>Lainnya</option></select></div></div>
+<div class="form-row"><label for="message">Pesan atau detail proyek</label><textarea id="message" name="message" rows="4" placeholder="Ceritakan ide atau kebutuhan kamu..." required minlength="5"></textarea></div>
+<button class="button button-primary submit-button" type="submit">Siapkan Pesan <span>↗</span></button><p class="form-note">Formulir ini menggunakan aplikasi email di perangkat kamu.</p><p class="form-feedback" id="formFeedback" role="status"></p></form>
+</div></section>
+
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">V</span> vins<span class="brand-dot">.</span></a><p>Dibuat dengan rasa ingin tahu dan semangat belajar.</p><a href="#top" class="back-top">Kembali ke atas ↑</a><span class="copyright">© <span id="year"></span> Vins</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
